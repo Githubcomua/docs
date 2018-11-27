@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:form="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .
+</style>
+<body>
+    <h1>hello enter your name</h1>
+        <form action="/saveDoctor" method="get">
+            <input type="" name="family" placeholder="Введіть прізвище">
+            <input type="" name="name" placeholder="Введіть ім*я">
+
+            <form:select path="department" items="${departmentList}" />
+
+        </form>
+
+    <select id="department" name="department">
+        <option value="Хірургія">Хірург</option>
+        <option value="Травматологія">Травматолог</option>
+        <option value="Стоматологія">Стоматолог</option>
+        <option value="Реанімація">Реаніматор</option>
+        <option value="Інше">Інше</option>
+    </select>
+    <input type="submit" name="" placeholder="">
+
+</body>
+</html>
